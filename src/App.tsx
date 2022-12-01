@@ -32,7 +32,8 @@ export const products: Product[] | undefined = productsFromServer.map(
   product => ({
     ...product,
     category: getCategory(product.categoryId),
-  }));
+  })
+);
 
 export const App: React.FC = () => {
   return (
